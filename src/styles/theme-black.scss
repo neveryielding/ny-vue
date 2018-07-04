@@ -1,0 +1,95 @@
+/** 定制 SiderBar black样式 start ***/
+.el-submenu{
+  .el-submenu__title {
+    height: 46px;
+    line-height: 46px;
+  }
+}
+
+.el-submenu {
+  .el-menu-item{
+    height: 40px;
+    line-height: 40px;
+    .is-active {
+      color: white!important;
+    }
+  }
+}
+
+.submenu-title-noDropdown {
+  height: 46px!important;
+  line-height: 46px!important;
+  background-color: #001529!important;
+  &:hover {
+    color: rgb(64, 158, 255)!important;
+  }
+}
+
+.el-submenu__title {
+  background-color: #001529!important;
+  &:hover {
+    color: rgb(64, 158, 255)!important;
+  }
+}
+
+.el-menu-item.is-active {
+  color: rgb(64, 158, 255)!important;
+}
+
+.el-submenu.is-active.is-opened > .el-submenu__title {
+  color: rgb(64, 158, 255)!important;
+}
+
+.el-submenu.is-active > .el-submenu__title > svg, 
+.el-submenu.is-active > .el-submenu__title > span,
+.el-submenu.is-active > .el-submenu__title .el-submenu__icon-arrow{
+  color: rgb(64, 158, 255)!important;
+}
+
+.el-menu-item > span {
+  padding-left: 13px;
+}
+
+.el-menu-item.submenu-title-noDropdown > span {
+  padding-left: 0px;
+}
+.menu-wrapper .nest-menu .el-submenu > .el-submenu__title {
+  padding-left: 53px !important;
+}
+// .menu-wrapper .nest-menu .el-submenu .el-menu .el-submenu > .el-submenu__title {
+//   padding-left: 73px !important;
+// }
+.el-menu--popup-right-start .el-submenu .el-submenu__title {
+  padding-left: 32px !important;
+}
+// .menu-wrapper .nest-menu .el-menu .el-menu--inline .el-menu-item {
+//   padding-left: 78px!important;
+// }
+
+/** 定制 SiderBar black样式 end ***/
+
+/** 定制 element ui button 样式颜色 start **/
+.el-button--primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.el-button--default {
+  color: rgba(0,0,0,.65);
+  background-color: #fff;
+  border-color: #d9d9d9;
+}
+
+/** 定制 element ui button 样式颜色 end **/
+
+/** 定制 element ui table 样式颜色 start **/
+.el-table th>.cell {
+  color: rgba(0,0,0,.95);
+  font-weight: 500;
+  font-size: 14px;
+}
+.el-table td>.cell {
+  color: rgba(0,0,0,.65);
+  font-size: 13px;
+}
+/** 定制 element ui table样式颜色 start **/

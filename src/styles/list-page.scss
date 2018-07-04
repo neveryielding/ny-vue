@@ -1,0 +1,53 @@
+/**
+ * 列表界面头部样式
+ * @author super
+ *
+ */
+.search-bar {
+  width: 100%;
+  margin: 10px 0;
+  // padding: 8px 5px;
+  min-height: 42px;
+  max-height: 190px;
+  background-color: white;
+  @include clearfix;
+  .left {
+    float: left;
+    margin-left: 5px;
+    height: 40px;
+    .el-range-editor--small.el-input__inner {
+      margin-top: 5px;
+      padding-left: 5px;
+      padding-right: 0;
+      width: 215px;
+    }
+    .el-date-editor .el-range-separator {
+      padding: 0;
+      line-height: 24px;
+      margin-left: 3px;
+      margin-right: 5px;
+    }
+    .el-range-editor--small .el-range-input {
+      width: 76px;
+    }
+  }
+  .right {
+    float: right;
+    margin-right: 5px;
+  }
+  .el-input {
+    float: left;
+    margin-top: 5px;
+  }
+  .el-button {
+    float: left;
+    margin-top: 5px;
+  }
+}
+
+div.el-pagination {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}

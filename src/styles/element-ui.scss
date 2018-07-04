@@ -1,0 +1,172 @@
+ //覆盖一些element-ui样式
+
+ .el-breadcrumb__inner, .el-breadcrumb__inner a{
+  font-weight: 400!important;
+}
+
+ .el-upload {
+   input[type="file"] {
+     display: none !important;
+   }
+ }
+
+ .el-upload__input {
+   display: none;
+ }
+
+ .cell {
+   .el-tag {
+     margin-right: 0px;
+   }
+ }
+
+ .small-padding {
+   .cell {
+     padding-left: 5px;
+     padding-right: 5px;
+   }
+ }
+
+ .fixed-width{
+  .el-button--mini{
+    padding: 7px 10px;
+    width: 60px;
+  }
+ }
+
+ .status-col {
+   .cell {
+     padding: 0 10px;
+     text-align: center;
+     .el-tag {
+       margin-right: 0px;
+     }
+   }
+ }
+
+ //暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+ .el-dialog {
+   transform: none;
+   left: 0;
+   position: relative;
+   margin: 0 auto;
+ }
+
+ //文章页textarea修改样式
+ .article-textarea {
+   textarea {
+     padding-right: 40px;
+     resize: none;
+     border: none;
+     border-radius: 0px;
+     border-bottom: 1px solid #bfcbd9;
+   }
+ }
+
+ //element ui upload
+ .upload-container {
+   .el-upload {
+     width: 100%;
+     .el-upload-dragger {
+       width: 100%;
+       height: 200px;
+     }
+   }
+ }
+
+ div.block {
+  width: 100%;
+  float: left;
+  background-color: white;
+  .el-pagination {
+    text-align: center;
+    margin: 15px 0;
+  }
+}
+ .el-input__inner, input[type="text"] {
+  font-family: "Monospaced Number","Chinese Quote",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-left: 5px;
+   padding-right: 5px;
+  color: rgba(0,0,0,.65);
+  background-color: #fff;
+  background-image: none;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.el-input__inner:hover {
+  border: 1px solid #40a9ff;
+}
+.el-input__inner:focus {
+  box-shadow:0px 0px 5px 1px rgba(69,169,255,0.5);
+}
+.el-input__inner::-webkit-input-placeholder {
+  color: rgba(129,148,147,.7);
+  font-size: 12.5px
+}
+input::-webkit-input-placeholder{
+  color: rgba(129,148,140,.7);
+  font-size: 12.5px
+}
+
+.el-dialog__body {
+  padding-bottom: 0;
+}
+.el-dialog__footer {
+  padding-top: 0;
+  text-align: center;
+}
+
+.el-table td, .el-table th.is-leaf {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.el-table .cell, .el-table th div, .el-table--border td:first-child .cell, .el-table--border th:first-child .cell {
+  padding-left: 0;
+}
+.el-table .cell, .el-table th div {
+  padding-right: 0
+}
+.el-table--mini td, .el-table--mini th {
+  padding: 6px 0;
+}
+.cell .el-button--mini,.cell .el-button--mini.is-round {
+  padding: 5px 7px;
+  margin-left: 2px;
+}
+
+.el-form-item__label {
+  color: rgba(0,0,0,.85);
+  font-size: 14px;
+  font-weight: normal;
+  padding-right: 7px;
+}
+
+.el-button--primary {
+  color: #fff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.el-range-editor.is-active, .el-range-editor.is-active:hover {
+  border-color: #409EFF;
+  box-shadow:0px 0px 5px 1px rgba(69,169,255,0.5);
+}
+
+.el-dialog__header {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content{
+  background-color: #e6f7ff!important;
+}
+
+.el-radio__inner {
+  border: 1px solid #b9b9b9;
+}
+.el-radio+.el-radio {
+  margin-left: 15px;
+}
