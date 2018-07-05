@@ -1,8 +1,10 @@
 
 ## 简介
 基于[vue-template-admin](https://github.com/neveryielding/vue-admin-template)脚手架开发的[ny-cloud](https://github.com/neveryielding/ny-cloud)前端权限管理系统UI，此项目依赖于ny-cloud提供的接口及数据，必须先启动ny-cloud项目才能正常使用 <br/> 
-账号密码： guest     123456 <br/>
-技术交流群： 807233785 <br/>
+- [在线访问](http://www.stars21.cn/) <br/><br/>
+- 技术介绍请移步[vue-template-admin](https://github.com/neveryielding/vue-admin-template)<br/> 
+- 账号密码： guest     123456 <br/>
+- 技术交流群： 807233785 <br/>
 #### 效果截图：
 ![enter image description here](http://chuantu.biz/t6/339/1530801681x-1404817431.png)
 ![enter image description here](http://chuantu.biz/t6/339/1530801756x-1404817706.png)
