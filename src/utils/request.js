@@ -14,7 +14,8 @@ const service = axios.create({
 
 // request interceptor
 service.interceptors.request.use(config => {
-  if (config.url.indexOf('login/') !== -1) {
+  debugger
+  if (config.url.indexOf('/login') !== -1) {
     return config
   }
   // const urls = config.url.split('/')
@@ -34,19 +35,7 @@ service.interceptors.request.use(config => {
 
 // respone interceptor
 service.interceptors.response.use(
-  response => {
-    if (JSON.stringify(response.headers) === '{}') {
-      return response
-    } else {
-      const data = response.data
-      if (data.code === 0 || data['access_token']) {
-        return data // 正常处理直接返回需要接受的数据
-      } else {
-        // 这里假设code返回不为 0 表示， 就直接返回错误的处理
-        return Promise.reject(data)
-      }
-    }
-  },
+  response => response.data,
   /**
   * 下面的注释为通过response自定义code来标示请求状态，当code返回如下情况为权限有问题，登出并返回到登录页
   * 如通过xmlhttprequest 状态码标识 逻辑可写在下面error中
