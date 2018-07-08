@@ -14,7 +14,6 @@ const service = axios.create({
 
 // request interceptor
 service.interceptors.request.use(config => {
-  debugger
   if (config.url.indexOf('/login') !== -1) {
     return config
   }
