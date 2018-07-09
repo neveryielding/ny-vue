@@ -27,13 +27,13 @@ export default {
   methods: {
     loadPermission() {
       this.loading = true
-      fetch('/admin/api/sysUser/noPermission/userResourceCodes', { resourceCodes: this.permission.code }).then(({ data }) => {
+      fetch('/auth/user/check_resource_codes', { codes: this.permission.code }).then(data => {
         let disabled = true
         if (data && data.length > 0) {
           disabled = false
         }
         this.setState(false, disabled, this.permission.text, 1)
-      }).catch(errpr => {
+      }).catch(() => {
         this.setState(false, false, '刷新权限', -1)
       })
     },

@@ -48,7 +48,7 @@
 
 <script>
 import VueParticles from '@/components/Particles/index'
-
+import md5 from 'js-md5'
 export default {
   name: 'login',
   components: { VueParticles },
@@ -76,7 +76,9 @@ export default {
       this.$refs.ruleForm.validate(valid => {
         if (valid) {
           this.loading = true
-          this.$store.dispatch('LoginByUsername', this.ruleForm).then(() => {
+          const request = this.$copy(this.ruleForm)
+          request.password = md5(request.password)
+          this.$store.dispatch('LoginByUsername', request).then(() => {
             this.loading = false
             this.$router.push({ path: '/' })
           }).catch(() => {
